@@ -11,7 +11,7 @@ let pickerCursorY;
 
 function setup() {
 	// createMetaTag();
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(windowWidth, windowHeight);
 	background(0);
 
   // Create control panel
