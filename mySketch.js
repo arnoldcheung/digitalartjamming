@@ -10,7 +10,7 @@ let pickerCursorX;
 let pickerCursorY;
 
 function setup() {
-	createMetaTag();
+	// createMetaTag();
   createCanvas(window.innerWidth, window.innerHeight);
 	background(0);
 
@@ -128,14 +128,14 @@ function generateColorPicker() {
 	colorPicker.rect(0, 0, colorPicker.width, colorPicker.height); 
 }
 
-function createMetaTag() {
-	let meta = createElement('meta');
-	meta.attribute('name', 'viewport');
-	meta.attribute('content', 'user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,height=device-height');
+// function createMetaTag() {
+// 	let meta = createElement('meta');
+// 	meta.attribute('name', 'viewport');
+// 	meta.attribute('content', 'user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,height=device-height');
 
-	let head = select('head');
-	meta.parent(head);
-}
+// 	let head = select('head');
+// 	meta.parent(head);
+// }
 
 function touchMoved() {
   // prevent the display from moving around when you touch it
