@@ -139,8 +139,16 @@ function generateColorPicker() {
 
 function touchMoved() {
   // prevent the display from moving around when you touch it
-  return false;
+  if (panelVisible && mouseX > controlPanel.x + 10 && mouseX < controlPanel.x + 10 + colorPicker.width && mouseY > controlPanel.y + 50 && mouseY < controlPanel.y + 50 + colorPicker.height) {
+    return false;
+  }
 }
+
+
+// function touchMoved() {
+//   // prevent the display from moving around when you touch it
+//   return false;
+// }
 
 // function touchEnded() {
 //   var fs = fullscreen();
